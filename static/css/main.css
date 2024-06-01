@@ -2,3 +2,52 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
+
+.danger{
+    color: red;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+table{
+    color: white;
+    border: transparent 2px solid;
+    border-right: transparent;
+    border-left: transparent;
+    border-radius: 25%;
+}
+
+tr{
+    border: 10px black solid;
+    background-color: gray;
+}
+
+td{
+    background-color: blue;
+    padding: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: orange
+}
+
+form{
+    padding: 1rem;
+}
+
+h1{
+    color: blue;
+}

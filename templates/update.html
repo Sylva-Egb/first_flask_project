@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    <title>Flask Index</title>
+    <title>Todo - Update</title>
 {%endblock%}
 
 {% block body %}
     <div class="content">
         <h1>TASK UPDATE</h1>
+        <form action="/update/{{task.id}}" method="POST">
+            {{ form.hidden_tag() }} 
+            {{ form.content.label }} {{ form.content(size=32) }}
+            {{ form.submit }}
+        </form>
     </div>
-    <form action="/update/{{task.id}}" method="POST">
-        {{ form.hidden_tag() }} 
-        {{ form.content.label }} {{ form.content(size=32) }}
-        {{ form.submit }}
-    </form>
 {%endblock%}
