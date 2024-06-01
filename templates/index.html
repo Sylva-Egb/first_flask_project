@@ -5,5 +5,46 @@
 {%endblock%}
 
 {% block body %}
-    <h1>Extending template</h1>
+    <div class="content">
+        <h1>TASK MASTER</h1>
+        {% if tasks|length <1 %}
+            <h4>
+                There is no task Create one below
+            </h4>
+        {% else %}
+            <table>
+                <tr>
+                    <th>
+                        Task
+                    </th>
+                    <th>
+                        Added at
+                    </th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+                {%for task in tasks%}
+                    <tr>
+                        <td>
+                            {{ task.content }}
+                        </td>
+                        <td>
+                            {{ task.created_at.date() }}
+                        </td>
+                        <td>
+                            <a href="/update/{{task.id}}">Modify</a>
+                            <br>
+                            <a href="/delete/{{ task.id }}">Delete</a>
+                        </td>
+                    </tr>
+                {%endfor%}
+            </table>
+        {%endif%}
+    </div>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
 {%endblock%}
