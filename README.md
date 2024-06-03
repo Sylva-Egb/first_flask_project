@@ -2,15 +2,15 @@
 ### Goal of this project: My introduction to the Python framework Flask
 #### Project Structure explanation
 
-|static
-    |css : The folder that contains all styling filed
-|templates : contains all the views of the application
-|app.py : the entry point of the application
-|config.py : Contains all the config of the application
-|forms.py : Contains all the formular classes used in the app
-|models.py : Contains the model of our tables in database
-|init_db.py : To initialize the database
-|routes.py : contains the url of the app and the function that go with each ones
+|static<br>
+    |css : The folder that contains all styling filed<br>
+|templates : contains all the views of the application<br>
+|app.py : the entry point of the application<br>
+|config.py : Contains all the config of the application<br>
+|forms.py : Contains all the formular classes used in the app<br>
+|models.py : Contains the model of our tables in database<br>
+|init_db.py : To initialize the database<br>
+|routes.py : contains the url of the app and the function that go with each ones<br>
 
 #### What you have to do to run the flask app
 
